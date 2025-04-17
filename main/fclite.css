@@ -255,14 +255,24 @@
     text-align: right;
 }
 
-.articles-container {
+/* .articles-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 8px;
     width: 100%;
+} */
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* 调整卡片之间的间距 */
+    justify-content: center;
 }
 
 .card {
+    width: 200px; /* 调整卡片宽度 */
+    height: 120px; /* 调整卡片高度 */
+    font-size: 12px; /* 缩小字体大小 */
     background-color: var(--container-bg-color);
     border-radius: 10px;
     padding: 10px;
@@ -274,6 +284,7 @@
     justify-content: space-between;
     height: 150px;
     transition: border 0.3s;
+    box-shadow: none;
 }
 
 .card:hover,
@@ -283,7 +294,7 @@
 
 .card-title {
     z-index: 1;
-    font-size: 17px;
+    font-size: 14px; /* 缩小标题字体大小17-14 */
     color: var(--text-color);
     font-weight: 520;
     cursor: pointer;
@@ -304,7 +315,9 @@
     text-decoration: underline;
 }
 
-.card-author,
+.card-author {
+  font-size: 12px; /* 缩小作者字体大小 */
+}
 .card-date {
     font-size: 12px;
     color: var(--author-color);
