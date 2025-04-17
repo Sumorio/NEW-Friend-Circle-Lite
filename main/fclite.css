@@ -400,3 +400,8 @@
     color: var(--author-color);
     text-decoration: none;
 }
+
+#random-article {
+  display: none;
+}
+
