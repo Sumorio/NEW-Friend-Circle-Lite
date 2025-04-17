@@ -270,8 +270,6 @@
 }
 
 .card {
-    width: 200px; /* 调整卡片宽度 */
-    height: 120px; /* 调整卡片高度 */
     font-size: 12px; /* 缩小字体大小 */
     background-color: var(--container-bg-color);
     border-radius: 10px;
@@ -298,9 +296,9 @@
     color: var(--text-color);
     font-weight: 520;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     line-height: 1.5;
-    max-height: 4.5em;
+    max-height: 4.0em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
