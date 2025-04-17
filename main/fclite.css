@@ -261,7 +261,7 @@
     gap: 8px;
     width: 100%; */
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* 调小最小宽度 */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* 调小最小宽度 */
     gap: 10px; /* 可以适当加大卡片间隔 */
     width: 100%;
 }
