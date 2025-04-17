@@ -350,9 +350,9 @@
 .card-date {
     position: absolute;
     z-index: 1;
-    bottom: 10px;
+    bottom: 12px;
     cursor: default;
-    right: 10px;
+    right: 12px;
     display: flex;
     align-items: center;
 }
