@@ -255,22 +255,14 @@
     text-align: right;
 }
 
-/* .articles-container {
+.articles-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 8px;
     width: 100%;
-} */
-
-.articles-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; /* 调整卡片之间的间距 */
-    justify-content: center;
 }
 
 .card {
-    font-size: 12px; /* 缩小字体大小 */
     background-color: var(--container-bg-color);
     border-radius: 10px;
     padding: 10px;
@@ -282,7 +274,6 @@
     justify-content: space-between;
     height: 150px;
     transition: border 0.3s;
-    box-shadow: none;
 }
 
 .card:hover,
@@ -292,13 +283,13 @@
 
 .card-title {
     z-index: 1;
-    font-size: 14px; /* 缩小标题字体大小17-14 */
+    font-size: 17px;
     color: var(--text-color);
     font-weight: 520;
     cursor: pointer;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     line-height: 1.5;
-    max-height: 4.2em;
+    max-height: 4.5em;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -313,9 +304,7 @@
     text-decoration: underline;
 }
 
-.card-author {
-  font-size: 12px; /* 缩小作者字体大小 */
-}
+.card-author,
 .card-date {
     font-size: 12px;
     color: var(--author-color);
@@ -365,8 +354,8 @@
     position: absolute;
     bottom: -20px;
     right: -16px;
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     opacity: 0.4;
     transition: transform 0.6s ease, bottom 0.3s ease, right 0.3s ease;
 }
@@ -412,6 +401,7 @@
     text-decoration: none;
 }
 
+/* 不显示数据统计 */
 #random-article {
   display: none;
 }
